@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-const API ="http://35.189.122.126:8888/songBird/api/account/library/deleteASong/";
+const API ="http://35.189.122.126:8888/songBird/api/library/deleteASong/";
 class DeleteSong extends React.Component {
   state = {
     id: "",

@@ -23,12 +23,11 @@ class DeleteSong extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Song number to delete:
-            <input type="text" name="id" onChange={this.handleChange} />
-          </label>
-          <button type="submit">Delete</button>
+        <form className="Card" onSubmit={this.handleSubmit}>
+          <label htmlFor="Delete Song"></label>
+            <input type="text" name="id" placeholder="Delete Song Number:" onChange={this.handleChange} />
+          <br></br>
+           <input className="button" type="submit" value="Delete" position = "center"/>
         </form>
       </div>
     )

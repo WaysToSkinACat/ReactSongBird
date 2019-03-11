@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import Library from './Library.js';
-import AddSong from './AddSong.js';
-import DeleteSong from './DeleteSong.js';
-import UpdateSong from './UpdateSong.js';
 
+import SongNavBar from './SongNavBar';
 import './App.css';
 
 class SongLibrary extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="container">
+
 <Library/>
-<AddSong/>
-<DeleteSong/>
-<UpdateSong/>
+<SongNavBar/>
+
 
       </div>
     );

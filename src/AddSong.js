@@ -37,21 +37,23 @@ class AddSong extends Component {
   }
   render() {
     return (
-      <form onSubmit={this.onSubmit}>
+      
+      <form className="Card" onSubmit={this.onSubmit}>
         <label htmlFor="songName" ></label>
         <input id="songName" type="text" placeholder="Enter a songName"onChange={this.handleChange} />
-        <br></br><br></br>
+        <br></br>
         <label htmlFor="bPM"></label>
         <input id="bPM" type="number" placeholder="Enter your bPM"onChange={this.handleChange} />
-        <br></br><br></br>
+        <br></br>
         <label htmlFor="description"></label>
         <input id="description" type="text" placeholder="Enter your description"onChange={this.handleChange} />
-        <br></br>        <br></br>
+        <br></br>
         <label htmlFor="tubeLink"></label>
         <input id="tubeLink" type="tubeLink" placeholder="Enter a tubeLink"onChange={this.handleChange} />
-        <br></br>        <br></br>        <br></br>        
-        <input  type="submit" value="Submit" position = "center"/>
+        <br></br>     
+        <input className="button" type="submit" value="Submit" position = "center"/>
       </form>
+
     );
   }
 

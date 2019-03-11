@@ -31,16 +31,16 @@ class Library extends Component {
 
     render() {
         const { store } = this.state
-        return (
+        return ( <a>
+                <h1>Songs in the Database</h1>
             <div className="Card">
-                <div className="header">Songs in the Database</div>
+               
                 {/* <SearchBar searchFunc={(e) => this.filterNames(e)} /> */}
 
                 <List usernames={store} />
 
-
-
-            </div>
+           </div>
+           </a>
         )
     }
 }

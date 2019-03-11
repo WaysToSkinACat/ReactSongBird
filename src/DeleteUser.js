@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-const API ="http://35.189.122.126:8888/songBird/api/account/deleteAccount/";
+const API = "http://35.189.122.126:8888/songBird/api/account/deleteAccount/";
 export default class DeleteUser extends React.Component {
   state = {
     id: '',
@@ -23,12 +23,12 @@ export default class DeleteUser extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Delete account with username:
-            <input type="text" name="id" onChange={this.handleChange} />
-          </label>
-          <button type="submit">Delete</button>
+        <form className="Card" onSubmit={this.handleSubmit}>
+          <br></br>
+          <label htmlFor="Delete account"></label>
+          <input type="text" name="id" placeholder="Delete account with username:" onChange={this.handleChange} />
+          <br></br>
+          <input className="button" type="submit">Delete</input>
         </form>
       </div>
     )

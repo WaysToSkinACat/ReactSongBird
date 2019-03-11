@@ -36,21 +36,23 @@ class CreateUser extends Component {
   }
   render() {
     return (
-      <form onSubmit={this.onSubmit}>
+
+      <form className="Card" onSubmit={this.onSubmit}>
         <label htmlFor="username" ></label>
         <input id="userName" type="text" placeholder="Enter a Username"onChange={this.handleChange} />
-        <br></br><br></br>
+        <br></br>
         <label htmlFor="firstname"></label>
         <input id="firstName" type="text" placeholder="Enter your Firstname"onChange={this.handleChange} />
-        <br></br><br></br>
+        <br></br>
         <label htmlFor="lastname"></label>
         <input id="lastName" type="text" placeholder="Enter your Lastname"onChange={this.handleChange} />
-        <br></br>        <br></br>
+        <br></br>
         <label htmlFor="email"></label>
         <input id="email" type="email" placeholder="Enter a Email"onChange={this.handleChange} />
-        <br></br>        <br></br>        <br></br>        
-        <input  type="submit" value="Submit" position = "center"/>
+        <br></br>      
+        <input className="button" type="submit" value="Submit" position = "center"/>
       </form>
+
     );
   }
 

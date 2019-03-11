@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
+const API ="http://35.189.122.126:8888/songBird/api/library/updateASong/";
 
 
 class UpdateSong extends Component {
@@ -23,7 +24,7 @@ class UpdateSong extends Component {
   }
   onSubmit = (event) => {
     event.preventDefault();
-    axios.put("http://localhost:8080/songBird/api/library/updateASong/" + this.state.songId, {
+    axios.put( API+ this.state.songId, {
       songId: this.state.songId,
       songName: this.state.songName,
       bPM: this.state.bPM,

@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-
+const API ="http://35.189.122.126:8888/songBird/api/account/library/deleteASong/";
 class DeleteSong extends React.Component {
   state = {
     id: "",
@@ -13,7 +13,7 @@ class DeleteSong extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    axios.delete("http://localhost:8080/songBird/api/library/deleteASong/" + this.state.id)
+    axios.delete(API + this.state.id)
       .then(res => {
         console.log(res);
         console.log(res.data);

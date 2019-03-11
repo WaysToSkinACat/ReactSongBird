@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
-
+const API ="http://35.189.122.126:8888/songBird/api/library/createASong";
 
 class AddSong extends Component {
 
@@ -22,7 +22,7 @@ class AddSong extends Component {
   }
   onSubmit = (event) => {
     event.preventDefault();
-    axios.post("http://localhost:8080/songBird/api/library/createASong", {
+    axios.post(API, {
       songName: this.state.songName,
       bPM: this.state.bPM,
       description: this.state.description,

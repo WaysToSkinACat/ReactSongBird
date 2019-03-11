@@ -3,7 +3,7 @@ import axios from 'axios';
 // import SearchBar from './SearchBar'
 import List from './LoadingHOCL'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-const API = 'http://localhost:8080/songBird/api/library/getAllSongs';
+const API ="http://35.189.122.126:8888/songBird/api/library/getAllSongs";
 
 
 class Library extends Component {

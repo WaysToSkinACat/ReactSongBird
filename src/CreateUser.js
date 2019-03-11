@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
-
+const API ="http://35.189.122.126:8888/songBird/api/account/createAccount";
 
 class CreateUser extends Component {
 
@@ -22,7 +22,7 @@ class CreateUser extends Component {
   }
   onSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:8080/songBird/api/account/createAccount', {
+    axios.post(API, {
       userName: this.state.userName,
       firstName: this.state.firstName,
       lastName: this.state.lastName,
